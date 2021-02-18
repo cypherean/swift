@@ -660,9 +660,9 @@ def libc : Separate<["-"], "libc">, HelpText<"libc runtime library to use">;
 
 def linker_option_Group : OptionGroup<"<linker-specific options>">;
 
-def l : Joined<["-"], "l">, Group<linker_option_Group>,
-    Flags<[FrontendOption, DoesNotAffectIncrementalBuild]>,
-    HelpText<"Specifies a library which should be linked against">;
+def l : JoinedOrSeparate<["-"], "l">, Group<linker_option_Group>,
+  Flags<[FrontendOption, DoesNotAffectIncrementalBuild]>,
+  HelpText<"Specifies a library which should be linked against">;
 def framework : Separate<["-"], "framework">, Group<linker_option_Group>,
   Flags<[FrontendOption, DoesNotAffectIncrementalBuild]>,
   HelpText<"Specifies a framework which should be linked against">;

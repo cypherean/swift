@@ -30,6 +30,7 @@
 // LLDB-OPTS-DAG: -L /path/to/more/libraries
 // LLDB-OPTS-DAG: -F /path/to/frameworks
 // LLDB-OPTS-DAG: -lsomelib
+// LLDB-OPTS-DAG: -l somelib
 // LLDB-OPTS-DAG: -framework SomeFramework
 // LLDB-OPTS-DAG: -I \"this folder\"
 // LLDB-OPTS: "
